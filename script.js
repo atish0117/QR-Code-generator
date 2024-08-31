@@ -10,8 +10,8 @@ function generateQR() {
                 }, 1000);
         }
         else{
-            qrImage.src =  "  https://quickchart.io/qr?text="+qrText.value+"&centerImageUrl=https://cdn-icons-png.flaticon.com/512/1389/1389234.png"
-            // qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+qrText.value ;
+            // qrImage.src =  "  https://quickchart.io/qr?text="+qrText.value+"&centerImageUrl=https://cdn-icons-png.flaticon.com/512/1389/1389234.png"
+            qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+qrText.value ;
             imgBox.classList.add('show-img');
         }
         qrText.value=""
